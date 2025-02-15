@@ -1,0 +1,13 @@
+.env
+dev.db
+/bin
+cover.out
+coverage.txt
+/tmp
+/data
+*.log
+*.log.*
+*.log-*
+*.log/*
+/vendor
+/.idea
