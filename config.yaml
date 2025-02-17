@@ -1,0 +1,38 @@
+# Server Configuration
+server:
+  host: "127.0.0.1"
+  port: 2002
+
+# Reasoning Model Configuration
+reasoning:
+  provider: "openrouter"
+  model: "deepseek/deepseek-r1:free"
+
+# Action Model Configuration
+action:
+  provider: "openrouter"
+  model: "google/gemini-2.0-flash-exp:free"
+
+# Pricing Config (/ million tokens)
+pricing:
+  openrouter:
+    output_price: 2.19
+
+  anthropic:
+    claude_3_sonnet:
+      input_price: 3.0
+      output_price: 15.0
+      cache_write_price: 3.75
+      cache_read_price: 0.30
+
+    claude_3_haiku:
+      input_price: 0.80
+      output_price: 4.0
+      cache_write_price: 1.0
+      cache_read_price: 0.08
+
+    claude_3_opus:
+      input_price: 15.0
+      output_price: 75.0
+      cache_write_price: 18.75
+      cache_read_price: 1.50

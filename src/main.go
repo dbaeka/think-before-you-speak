@@ -13,7 +13,7 @@ import (
 
 var (
 	printVersion = flag.Bool("v", false, "print version")
-	appConfig    = flag.String("config", "../config.toml", "application config path")
+	appConfig    = flag.String("config", "../config.yaml", "application config path")
 	isLocal      = flag.Bool("local", true, "local mode as compared to when deployed on managed Service")
 )
 
